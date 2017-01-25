@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+}
+
+.button {
+  display: inline-block;
+  width: 110px;
+  border: 1px solid grey;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.button:hover{
+  background-color: white;
+  color: green;
+}
+
+.pull-right{
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button-green {
+  background-color: green;
+}
