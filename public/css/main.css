@@ -1,29 +1,50 @@
+html {
+  margin:0;
+}
+
 body {
   background-color: white;
+  margin:0px;
+  font-family:Arial,sans-serif;
 }
 
 .button {
   display: inline-block;
-  width: 110px;
-  border: 1px solid grey;
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   text-align: center;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
-  color: black;
-  padding: 10px;
+  color: white;
+  padding: 11px;
+  margin-top:20px;
+}
+
+.button-login {
+  border: 0;
+  margin-right:30px;
 }
 
 .button:hover{
   background-color: white;
-  color: green;
+  color: #ffad1f;
 }
 
 .pull-right{
   float: right;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
 }
 
-.button-green {
-  background-color: green;
+.button-white {
+  background-color: rgba(255, 255, 255, 0.298);
+}
+
+h1 {
+  margin:0px;
+  background-color: #ffad1f;
+  text-align:center;
+  padding:90px;
+  color:white;
+  font-size: 48px;
+  font-weight:lighter;
 }
