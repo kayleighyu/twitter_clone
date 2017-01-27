@@ -102,5 +102,6 @@ h1 {
 }
 
 .twitter-box{
-  text-align:center;
+  text-align:center !important;
+  vertical-align: middle;
 }
