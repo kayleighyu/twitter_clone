@@ -106,3 +106,9 @@ h1 {
   text-align:center !important;
   vertical-align: middle;
 }
+
+header img{
+  position:absolute;
+
+  width:24px;
+}
