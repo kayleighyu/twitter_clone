@@ -4,12 +4,19 @@ body {
   font-family: arial, sans-serif;
 }
 nav {
-  background-image: url("/images/gradientimage.png");
-  background-repeat: no-repeat;
+  /* background-image: url("/images/gradientimage.png");*/
+  /* background-repeat: no-repeat;*/
   background-size: 100%;
-  height: 50px;
-  border-bottom: 1px solid #d379ff;
+  position:fixed;
+  width:100%;
+  height: 45px;
+  border-bottom: 1px solid #4698BA;
   color: white;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #59ADEB , #34CE93); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #59ADEB , #34CE93); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #59ADEB , #34CE93); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #59ADEB , #34CE93); /* Standard syntax */
 }
 
 nav a{
@@ -18,46 +25,122 @@ nav a{
   font-size:13px;
 }
 
+nav a small {
+  font-size:12px;
+}
 nav a:hover {
   text-decoration:underline;
   color:#1da1f2;
 }
 
-.twitterbird {
+.twitterbird-container{
+  width:55px;
+  height:45px;
   position:absolute;
   left: 50%;
-  top: 10px;
+  margin-top:14px;
+  text-align: center;
+}
+.twitterbird-container a:hover{
+  padding-bottom:8px;
+  padding-right:15px;
+  padding-left:15px;
+  border-bottom: 5px solid #1da1f2;
 }
 
 .nav-links {
   float: right;
-  padding-top:14px;
-  margin-right:60px;
+  padding-top:12px;
+  margin-right:30px;
+  font-weight:500;
 }
-
-h3 {
-  font-weight:lighter;
-  font-size: 32px;
+.nav-links img{
+  margin:0 5px;
+  position:relative;
+  top:-1px;
+  left:-3px;
 }
-
 .btn-signup {
-  background-color:#d379ff;
+  background-color:#1da1f2;
   border: none;
+  height:44px;
   border-radius:4px;
   color:white;
   width: 399px;
   font-size: 16px;
   padding:12px 16px;
-  margin:12px;
-
+  margin-top:30px;
+  margin-bottom:18px;
 }
 
-input {
+button:focus{
+  outline:0;
+}
+
+button:hover{
+  cursor:pointer;
+}
+.name-email-pw-inputs input {
   width: 376px;
   border: 1px solid rgb(225, 232, 237);
   border-radius: 3px;
-  color: rgb(225, 232, 237);
   font-size:18px;
   padding:10px;
-  margin:12px;
+  margin-bottom:25px;
+  color: #292f33;
+}
+
+.name-email-pw-inputs input:focus{
+  outline:0;
+  border: 1px solid #1da1f2;
+}
+
+.middle-container{
+  display: block;
+  height:400px;
+  width:950px;
+  padding-top:160px;
+  margin:0 auto;
+}
+
+.small-container{
+  display: block;
+  height:400px;
+  width:400px;
+  margin:0 auto;
+}
+
+h3 {
+  font-weight:lighter;
+  font-size: 30px;
+  margin-bottom: 25px;
+  margin-top:0;
+  z-index: -1;
+  position:relative;
+  color:#292f33;
+}
+
+.checkbox{
+  position:relative;
+  left:-4px;
+  text-align:left;
+  font-size: 13px;
+  color:#66757f;
+  padding-left:0;
+}
+.checkbox input:hover{
+  cursor: pointer; 
+}
+a{
+  color:#1b95e0;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  font-size:12px;
+  line-height:18px;
+  color:#8899a6;
 }

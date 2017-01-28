@@ -76,6 +76,7 @@ h1 {
 }
 
 .nav-list li:hover{
+  padding: 15px 40px;
   border-bottom: 5px solid orange;
 }
 

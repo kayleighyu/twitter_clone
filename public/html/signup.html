@@ -9,29 +9,43 @@
 </head>
 <body>
   <nav>
-    <img class="twitterbird" src="/images/twitterlogo.png" alt="twitter-bird-img" width="24px">
+    <div class="twitterbird-container">
+      <a href="/"><img class="twitterbird" src="/images/twitterlogo2.png" alt="twitter-bird-img" width="20px"></a>
+    </div>
     <div class="nav-links">
-      <a href=""><small>Language:</small> English <img src="/images/downarrow.png" alt="downarrow" width="16px"></a>
-      <a href=""><small>Have an account?</small> Log in<img src="/images/downarrow.png" alt="downarrow" width="16px"></a>
+      <a href=""><small>Language:</small> English <img src="/images/downarrow.png" alt="downarrow" width="7px"></a>
+      <a href=""><small>Have an account?</small> Log in<img src="/images/downarrow.png" alt="downarrow" width="7px"></a>
     </div>
   </nav>
-  <header>
-    <h3>Join Twitter today.</h3>
-  </header>
-  <main>
-    <form action="/signup" method="GET">
-    <div>
-      <input type="name" name="name" placeholder="Full name">
+  <div class="middle-container">
+    <div class="small-container">
+      <header>
+        <h3>Join Twitter today.</h3>
+      </header>
+      <main>
+        <div class="name-email-pw-inputs">
+          <form action="/signup" method="GET">
+          <div>
+            <input type="name" name="name" placeholder="Full name">
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Phone or Email">
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" checked>Tailor Twitter based on my recent website visits.
+          <a href="">Learn more.</a>
+        </div>
+        <button type="submit" class="btn-signup">Sign up</button>
+        </form>
+    </main>
+    <footer>By signing up, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>, including <a href="">Cookie Use</a>. Others will be able to find you by email or phone number when provided.
+      <p><a href="">Advanced options</a></p>
+    </footer>
     </div>
-    <div>
-      <input type="email" name="email" placeholder="Phone or Email">
-    </div>
-    <div>
-      <input type="password" name="password" placeholder="Password">
-    </div>
-    <button type="submit" class="btn-signup">Sign up</button>
-    </form>
-  </main>
-  <footer></footer>
+  </div>
 </body>
 </html>
