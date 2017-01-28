@@ -1,0 +1,60 @@
+body {
+  font-family: arial, sans-serif;
+  color: #8899a6;
+  text-align:center;
+  background-color:rgb(60,60,60);
+}
+
+h3 {
+  font-weight:lighter;
+  font-size: 16px;
+}
+
+input {
+  height: 25px;
+  width: 230px;
+  margin-top:10px;
+  border: 1px solid rgb(225, 232, 237);
+  border-radius: 2px;
+  color: rgb(225, 232, 237);
+  padding-left:4px;
+}
+
+.checkbox{
+}
+
+.btn-login{
+  width:237px;
+  height: 37px;
+  margin:10px 0;
+  border: none;
+  border-radius:4px;
+  background-color:#1da1f2;
+  color:white;
+  font-size: 16px;
+}
+
+.link-signup{
+  text-decoration:none;
+  color:#1da1f2;
+}
+
+footer{
+  font-size: 14px;
+}
+
+.popup-container{
+  position:fixed;
+  width:500px;
+  height:300px;
+  z-index: 2;
+  top:50%;
+  left:50%;
+  background-color:white;
+  border:none;
+  border-radius:5px;
+}
+
+hr{
+  border: 1px solid rgb(225, 232, 237);
+}
