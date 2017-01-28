@@ -1,1 +1,37 @@
-signup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+  <nav>
+    <img class="twitterbird" src="/images/twitterlogo.png" alt="twitter-bird-img" width="24px">
+    <div class="nav-links">
+      <a href=""><small>Language:</small> English <img src="/images/downarrow.png" alt="downarrow" width="16px"></a>
+      <a href=""><small>Have an account?</small> Log in<img src="/images/downarrow.png" alt="downarrow" width="16px"></a>
+    </div>
+  </nav>
+  <header>
+    <h3>Join Twitter today.</h3>
+  </header>
+  <main>
+    <form action="/signup" method="GET">
+    <div>
+      <input type="name" name="name" placeholder="Full name">
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="Phone or Email">
+    </div>
+    <div>
+      <input type="password" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn-signup">Sign up</button>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+</html>

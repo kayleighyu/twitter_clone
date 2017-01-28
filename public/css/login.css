@@ -9,6 +9,9 @@ h3 {
   font-weight:lighter;
   font-size: 16px;
 }
+main {
+  border: 1px solid rgb(225, 232, 237);
+}
 
 input {
   height: 25px;
@@ -44,17 +47,15 @@ footer{
 }
 
 .popup-container{
-  position:fixed;
   width:500px;
   height:300px;
-  z-index: 2;
-  top:50%;
-  left:50%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   background-color:white;
   border:none;
   border-radius:5px;
-}
-
-hr{
-  color: rgb(225, 232, 237);
 }
