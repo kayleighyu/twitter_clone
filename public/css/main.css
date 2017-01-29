@@ -4,12 +4,61 @@ html {
 }
 
 body {
-  background-color: white;
-  margin:0px;
+  background-color: #F5F8FA;
+  margin:0;
+  padding-top:20px;
 }
 
+main{
+  position:absolute;
+  top:280px;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  width:1200px;
+  height:600px;
+}
+
+.moments{
+  position:relative;
+  left:35px;
+  color:#66757f;
+  font-size:18px;
+  font-weight: 300;
+}
+
+.ViewAll{
+  font-size:12px;
+  padding: 0 10px;
+}
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
+}
+.pull-right{
+  float: right;
+  margin-left: 15px;
+}
+.button-white {
+  background-color: rgba(255, 255, 255, 0.298);
+}
+h1 {
+  margin:0px;
+  background-color: #ffad1f;
+  text-align:center;
+  padding:80px;
+  color:white;
+  font-size: 48px;
+  font-weight:lighter;
+  z-index: -1;
+}
+.topbar {
+  position: relative;
+  overflow: hidden;
 }
 
 .button {
@@ -32,27 +81,8 @@ a {
 .button:hover{
   background-color: white;
   color: #ffad1f;
+  text-decoration: none;
 }
-
-.pull-right{
-  float: right;
-  margin-left: 15px;
-}
-
-.button-white {
-  background-color: rgba(255, 255, 255, 0.298);
-}
-
-h1 {
-  margin:0px;
-  background-color: #ffad1f;
-  text-align:center;
-  padding:80px;
-  color:white;
-  font-size: 48px;
-  font-weight:lighter;
-}
-
 .nav-container{
   background-color:white;
   border-bottom: 1px solid lightgrey;
@@ -61,54 +91,163 @@ h1 {
 .nav-list{
   margin: 0 auto;
   text-align: center;
-
 }
 
 .nav-list li{
   display: inline-block;
   padding: 20px 40px;
   border-right: 1px solid lightgrey;
-  margin: auto -2.5px;
+  margin: 0 -2.5px;
 }
 
 .nav-list li:first-child{
-  border-left: 1px solid lightgrey;
+  border-left: none;
 }
 
 .nav-list li:hover{
   padding: 15px 40px;
   border-bottom: 5px solid orange;
+  cursor: pointer;
 }
 
 .content-box{
   text-align: center;
 }
-
+.content-box a:hover{
+  text-decoration: none;
+}
 .content-box section{
+  background-color: white;
   border: 1px solid lightgrey;
+  border-radius:5px;
   display: inline-block;
   color: rgb(41, 47, 51);
   font-size: 14px;
   font-weight:lighter;
   height: 400px;
-  width:312px;
-  margin-right: 5px;
+  width:270px;
+  margin-right: 7px;
   vertical-align:middle;
   text-align:left;
+  overflow: hidden;
+  z-index: -1;
 }
 
-.content-box section h3,h4{
+.content-box section img{
+  height:350px;
+}
+
+.content-box section h3{
   padding-left:10px;
   font-family: arial, sans-serif;
+  color:#292f33;
+  font-weight:lighter;
+  font-size:14px;
+}
+.content-box section h3:hover{
+  text-decoration: underline;
+}
+.content-box section h4{
+  padding-left:10px;
+  margin-top:-10px;
+  font-family: arial, sans-serif;
+  color:#66757f;
+  font-weight:lighter;
+  font-size:12px;
 }
 
-.twitter-box{
-  text-align:center !important;
-  vertical-align: middle;
+header{
+  position:fixed;
+  width:100%;
+  margin-top:-20px;
+  z-index: 1;
 }
-
+.bigtwitterlogo {
+  opacity: 0.4;
+  position:absolute;
+  top:70px;
+  bottom:0;
+  left:700px;
+  right:0px;
+  margin: 0 auto;
+  width:500px;
+  height:400px;
+}
 header img{
   position:absolute;
+  width:34px;
+  left:35px;
+  top:20px;
+}
+header a:hover{
+  cursor: pointer;
+}
+ul li img{
+  position:relative;
+  top:13px;
+  left:5px;
+  margin-top:-20px;
+}
+.twitter-box{
+  text-align:center !important;
+  background-color: #FFAD1F !important;
+  position:relative;
+  border: 1px solid lightgrey;
+  border-radius:5px;
+  display: inline-block;
+  height: 400px;
+  width:270px;
+  margin-right: 7px;
+  vertical-align:middle;
+}
+.small-twitter-box{
+  width:220px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.twitter-box h2{
+  font-size:22px;
+  font-weight:200;
+  color: white;
+}
+.twitter-box p{
+  font-size:14px;
+  font-weight:200;
+  color: white;
+}
+.twitterbox-signup{
+  width:130px !important;
+  background-color:white;
+  color:#FFAD1F;
+  font-size:18px;
+}
+.twitterbox-signup:hover {
+  text-decoration: none;
+  border-style: inset;
+  position:relative;
+  cursor:pointer;
+  top:1px;
+}
 
-  width:24px;
+footer{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  height:auto;
+  width:100%;
+  color:#aab8c2;
+  font-size:12px;
+  border-top:1px solid lightgrey;
+  text-align: center;
+  background-color: white;
+}
+footer a{
+  color:#aab8c2;
+}
+
+footer ul li{
+  display: inline-block;
+  margin: 0 12px;
+  position: relative;
 }

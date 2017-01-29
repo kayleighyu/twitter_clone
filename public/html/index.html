@@ -7,14 +7,16 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="topbar">
         <a href="login" class="button button-white pull-right button-login">Login</a> <!-- control shift + d to copy a line and paste on new line-->
         <a href="signup" class="button pull-right">Sign up</a> <!-- inline -->
-        <a href=""><img src="/images/twitterlogo2.png" alt=""></a>
+        <a href=""><img class="smalltwitterlogo" src="/images/twitterlogo2.png" alt=""></a>
         <h1>What's happening?</h1>
+        <img class="bigtwitterlogo" src="/images/twitterlogo2.png" alt="">
       </div>
       <nav class="nav-container">
         <ul class="nav-list">
+          <li><img src="/images/magnifyingglass.png" alt="" height="auto"></li>
           <li>Featured</li>
           <li>News</li>
           <li>Music</li>
@@ -25,34 +27,37 @@
       </nav>
     </header>
   <main>
-    <h2>Moments <small><a href="">View all</a></small></h2>
+    <h2 class="moments">Moments <small><a href=""><span class="ViewAll">View all</span></a></small></h2>
     <div class="content-box">
       <a href="#">
         <section>
-          <h3>Anti-pipeline protesters</h3>
-          <h4>Social Action 3 minutes ago</h4>
-          <img src="http://placehold.it/312x312/" alt="#">
+          <h3>Great wall of China</h3>
+          <h4>Places 3 minutes ago</h4>
+          <img src="/images/pic3.jpg" alt="#">
         </section>
       </a>
       <a href="#">
         <section>
-          <h3>Ryan Gosling's new wax figure</h3>
-          <h4>Social Action 3 minutes ago</h4>
-          <img src="http://placehold.it/312x312/" alt="#">
+          <h3>Toyko, Japan</h3>
+          <h4>Places 3 minutes ago</h4>
+          <img src="/images/pic2.jpg" alt="#">
         </section>
       </a>
       <a href="#">
         <section>
-          <h3>Mark Hamill reacts to announced...</h3>
-          <h4>Social Action 3 minutes ago</h4>
-          <img src="http://placehold.it/312x312/" alt="#">
+          <h3>Hot air balloons</h3>
+          <h4>Places 3 minutes ago</h4>
+          <img src="/images/pic4.jpg" alt="#">
         </section>
       </a>
-        <section class="twitter-box">
-          <a href=""><h2>New to Twitter?<h2></a>
-          <p>Sign up now to get your personalized timeline!</p>
-          <a href="#">Sign up</a>
-        </section>
+        <div class="twitter-box">
+          <div class="small-twitter-box">
+            <h2>New to Twitter?<h2>
+            <p>Sign up now to get your own<br>
+              personalized timeline!</p>
+            <a href="#" class="button twitterbox-signup">Sign up</a>
+          </div>
+        </div>
     </div>
   </main>
   <footer>
