@@ -189,10 +189,10 @@ ul li img{
   margin-top:-20px;
 }
 .twitter-box{
-  text-align:center !important;
-  background-color: #FFAD1F !important;
-  position:relative;
+  text-align:center;
+  background-color: #FFAD1F;
   border: 1px solid lightgrey;
+  position:relative;
   border-radius:5px;
   display: inline-block;
   height: 400px;
@@ -217,7 +217,7 @@ ul li img{
   color: white;
 }
 .twitterbox-signup{
-  width:130px !important;
+  width:130px;
   background-color:white;
   color:#FFAD1F;
   font-size:18px;
